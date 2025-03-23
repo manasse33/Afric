@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Afric Soft Net</title>
+    <link rel="stylesheet" href="../Static/css/contact.css">
+</head>
+<body>
+
+    <!-- En-tête -->
+
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="../static/img/logo.jpeg" alt="Afric Soft Net">
+            </div>
+
+            <!-- Menu de navigation -->
+            <nav class="navbar">
+                <a href="../index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+
+            <!-- Bouton Contact -->
+            <a href="contact.html" class="btn-contact">Nous Contacter</a>
+        </div>
+    </header>
+
+    <!-- Bannière -->
+    <section class="hero-contact">
+        <div class="overlay">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes disponibles pour répondre à toutes vos questions.</p>
+        
+        </div>
+    </section>
+
+    <!-- Coordonnées -->
+    <section class="contact-info">
+        <div class="container">
+            <h2>Nos Coordonnées</h2>
+            <p>Vous pouvez nous contacter via les moyens suivants :</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>Adresse</h3>
+                    <p>123 Avenue des Startups, Brazzaville, Congo</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Téléphone</h3>
+                    <p>+242 06 820 2822</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:contact@africsoftnet.com">contact@africsoftnet.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi : 8h - 18h<br>Samedi : 9h - 13h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Formulaire de Contact -->
+    <section class="contact-form">
+        <div class="container">
+            <h2>Envoyez-nous un message</h2>
+            <p>Nous serions ravis de répondre à toutes vos questions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
+            <form action="send_mail.php" method="POST">
+                <label for="name">Nom & Prénom</label>
+                <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Votre adresse email">
+    
+                <label for="message">Votre message</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Votre message ici..."></textarea>
+    
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- FAQ -->
+    <section class="map">
+        <h2>Notre emplacement</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12737.2356!2d15.2847!3d-4.2634!4m5!3s0x0:0x0!8m2!3d-4.2634!4d15.2847" 
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <p class="error-message">La carte ne se charge pas ? Essayez d'activer JavaScript ou de recharger la page.</p>
+        </div>
+    </section>
+    
+    
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>À propos</h4>
+                <p>Afric Soft Net fournit des solutions IT sur mesure pour améliorer la performance de votre entreprise. Nous combinons expertise locale et technologie de pointe pour répondre à vos besoins.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens utiles</h4>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="services.html">Nos services</a></li>
+                    <li><a href="about.html">A propos de nous</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong> contact@africsoftnet.com</p>
+                <p><strong>Téléphone:</strong> +242 06 123 45 67</p>
+                <p><strong>Adresse:</strong> 123 Avenue des Technologie, Brazzaville, Congo</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-icon">🔗</a>
+                    <a href="#" target="_blank" class="social-icon">🔵</a>
+                    <a href="#" target="_blank" class="social-icon">🐦</a>
+                    <a href="#" target="_blank" class="social-icon">📸</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Afric Soft Net - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="../Static/js/script.js"></script>
+</body>
+</html>
