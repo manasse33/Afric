@@ -143,10 +143,11 @@ ul li {
 }
 
 .about-content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
+    justify-content: center;
+    max-width: 1024px;
     margin: auto;
     gap: 40px;
 }
@@ -222,7 +223,7 @@ ul li {
 
 .values-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 100px;
 }
 
@@ -484,3 +485,36 @@ opacity: 1;
         padding: 10px; /* Moins de padding pour les très petits écrans */
     }
 }
+
+@media screen and (max-width: 768px) {
+    .about-intro {
+        padding: 50px 10px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Passer les éléments de la section en colonne */
+        gap: 20px; /* Réduire l'écart entre le texte et l'image */
+    }
+    .about-text {
+        text-align: center;
+    }
+
+    .about-image {
+        width: 80%; /* Réduire la taille de l'image */
+        margin: 0 auto; /* Centrer l'image */
+    }
+}
+@media screen and (max-width: 1024px) {
+    .about-content {
+        gap: 30px; /* Ajuster l'écart pour les tablettes */
+    }
+
+    .about-text {
+    text-align: center; /* Centrer le texte sur les tablettes pour plus de lisibilité */
+    }
+
+    .about-image {
+        width: 90%; /* Image un peu plus petite sur tablette */
+    }
+}
+

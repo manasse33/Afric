@@ -255,7 +255,8 @@ strong {
 }
 
 .additional-services {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     justify-content: center;
     align-items: center;
     gap: 50px;
@@ -464,6 +465,30 @@ button:hover {
     }
     100% {
         transform: scale(1);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-background {
+        height: 60vh; 
+        font-size: 1.2rem;
+        width: 100%;
+        /* top: 50px; */
+    }
+
+    .hero-background .hero-content {
+        padding: 15px; /* Moins de padding sur les petits écrans */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-background {
+        height: 50vh; /* Encore plus petit sur les très petits écrans */
+        font-size: 1rem; /* Taille de texte encore réduite pour s'adapter à l'écran */
+    }
+    .hero-background.hero-content{
+        padding: 10px; /* Moins de padding pour les très petits écrans */
     }
 }
 

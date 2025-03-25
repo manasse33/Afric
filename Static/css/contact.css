@@ -468,3 +468,26 @@ table{
 
     gap: 20px;
    }
+
+   @media screen and (max-width: 768px) {
+    .hero-contact {
+        height: 60vh; 
+        font-size: 1.2rem;
+        width: 100%;
+        /* top: 50px; */
+    }
+
+    .hero-contact .overlay {
+        padding: 15px; /* Moins de padding sur les petits écrans */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-contact {
+        height: 50vh; /* Encore plus petit sur les très petits écrans */
+        font-size: 1rem; /* Taille de texte encore réduite pour s'adapter à l'écran */
+    }
+    .hero-contact.overlay {
+        padding: 10px; /* Moins de padding pour les très petits écrans */
+    }
+}
