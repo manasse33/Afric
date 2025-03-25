@@ -12,6 +12,8 @@
     <!-- En-tête -->
 
     <header class="header">
+     
+
         <div class="container">
             <!-- Logo -->
             <div class="logo">
@@ -27,15 +29,20 @@
             </nav>
 
             <!-- Bouton Contact -->
-            <a href="contact.html" class="btn-contact">Nous Contacter</a>
+            <!-- <a href="contact.html" class="btn-contact">Nous Contacter</a> -->
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
         </div>
+
+       
+</header>
+</header>
     </header>
 
     <!-- Bannière -->
     <section class="hero-contact">
         <div class="overlay">
-            <!-- <h1>Contactez-nous</h1>
-            <p>Nous sommes disponibles pour répondre à toutes vos questions.</p> -->
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes disponibles pour répondre à toutes vos questions.</p>
         </div>
     </section>
 
@@ -95,19 +102,62 @@
     <!-- Formulaire de Contact -->
     <section class="contact-form">
         <div class="container">
-            <h2>Envoyez-nous un message</h2>
-            <p>Nous serions ravis de répondre à toutes vos questions. Veuillez remplir le formulaire ci-dessous pour nous contacter.</p>
-            <form action="send_mail.php" method="POST">
-                <label for="name">Nom & Prénom</label>
-                <input type="text" id="name" name="name" required placeholder="Votre nom complet">
-    
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Votre adresse email">
-    
-                <label for="message">Votre message</label>
-                <textarea id="message" name="message" rows="6" required placeholder="Votre message ici..."></textarea>
-    
-                <button type="submit">Envoyer</button>
+            <form method="post" name="myForm">
+
+                <div>
+                    <img src="../Static/img/contact.svg" alt="">
+                </div>
+
+               <div class="right">
+                <h3>Contactez-nous</h3>
+                    <div class="flex">
+                        <div class="">
+                            <div class="">
+                                <label for="name" class="">Nom:</label>
+                              
+                                <input name="name" id="name" type="text"  placeholder="Name :">
+                                
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="">
+                                <label for="email" class="">Your Email:</label>
+                                
+                                <input name="email" id="email" type="email"  placeholder="Email :">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="">
+                            <div class="">
+                                <label for="subject" class="">Question:</label>
+                              
+                                    <!-- <i data-feather="book" class="icon"></i> -->
+                                    <input name="subject" id="subject"  placeholder="Subject :" >
+                                
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="">
+                                <label for="comments" class="">Commentaire:</label>
+                              
+                                    <!-- <i data-feather="message-circle" class="icon"></i> -->
+                                    <textarea name="comments" id="comments" placeholder="Message :"></textarea>
+                                
+                            </div>
+                        </div>
+                    </div>
+                   <div class="bouton">
+                    <button type="submit" id="submit" name="send" >Send Message</button>
+                   </div>
+               </div>
+
+               
+               
             </form>
         </div>
     </section>
@@ -173,5 +223,7 @@
     </footer>
 
     <script src="../Static/js/script.js"></script>
+    <script src="../Static/js/feather.min.js"></script>
+    <script src="../Static/js/app.js"></script>
 </body>
 </html>
